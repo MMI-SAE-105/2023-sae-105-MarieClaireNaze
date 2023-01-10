@@ -1,0 +1,7 @@
+*:root{
+    --jaune: rgba(233, 181, 105, 1);
+    --jaunesurligner: rgba(233, 181, 105, 0.3);
+    --background: rgba(245, 244, 245, 1);
+    --footer: rgba(55, 51, 47, 1);
+    --element: rgba(104, 118, 127, 1);
+    }
