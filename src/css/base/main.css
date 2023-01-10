@@ -1,3 +1,32 @@
 body{
     background-color: var(--background);
 }
+
+.main{margin: 15px;}
+.titre{
+    font-family: 'Great Vibes';
+    background-color: var(--jaunesurligner);
+    margin-right: 200px;
+    
+}
+.titre__article{
+    margin-top: 30%;
+    font-family: 'Great Vibes';
+   display: flex;
+   justify-content: center;
+}
+.surligner__titrearticle{background-color: var(--jaunesurligner);
+}
+
+.titre__footer{
+    font-family: 'Great Vibes';
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+}
+
+.article{
+    font-family: 'Roboto';
+    margin-bottom: 3rem ;
+    
+}
