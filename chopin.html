@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feel'in</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body class="">
+    <header class="header">
+        <img src="public/img/logo.webp" alt="Logo Feel'in" class="logo">
+        <div class="nav-toggle" onclick="document.body.classList.toggle('menu-open')
+        ">
+         <div class="nav-toggle-bar"></div>
+        </div>
+        
+    </header>
+    <main class="main">
+        
+        <h1 class="titre__article"><div class="surligner__titrearticle">Frédérique Chopin</div></h1>
+      
+        
+        <img src="/public/img/chopin.webp" alt="Frédérique Chopin" class="img__artiste">
+       
+        <section class="article">
+            <h2 class="titre">
+                Presentation</h2>
+                <p>Frédérique Chopin est un compositeur et pianiste franco-polonais  né le 1er mars 1810 a Zelazowa Wola et morts le 17octobre 1849. Il a composé des oevre qui sont maintenant jouer et utiliser dans le monde entier, ses inpirations sur les sentiment on su faire de lui l'un des plus grans musicien du monde.  </p>
+
+            </section>
+            <section class="article">
+                <h2 class="titre">Quelques oeuvres</h2>
+            <div class="accordeon">
+              <section><button{bouton $}+p><div x-data="{ open: false }">
+                <button @click="open = ! open"><u>3 de Mayo</u></button>
+                  <p x-show="open== true"x-transition.duration.800ms>
+                        <img src="/public/img/3 de mayo.webp" alt="3 de mayo" class="img">
+                    <section><button{bouton $}+p><div x-data="{ open: false }">
+                <button @click="open = ! open"><u>Portrait de la marquise de la Solana</u></button>
+                  <p x-show="open== true"x-transition.duration.800ms>
+                        <img src="/public/img/portrait de la marde la solana 1.webp" alt="portrait de marquise de la solana" class="img">
+                    <section><button{bouton $}+p><div x-data="{ open: false }">
+                <button @click="open = ! open"><u>Saturne mangeant l'un de ses fils</u></button>
+                <p x-show="open== true"x-transition.duration.800ms>
+                    <img src="/public/img/saturne.webp" alt="Saturne mangeant l'un de ses fils" class="img">
+                  
+            </div>
+            </section>
+    
+        </main>
+    
+    
+    
+    
+    
+        <footer>
+            <div class="footer">
+              <h3 class="titre__footer">Feel'in</h3>
+            <section class="footer__element">
+            <section class="footer__autrepage">
+              <p>Besoin d'aide ?</p>
+              <nav>
+                  <ul>
+                    <li><a href="/Information.html" >Information</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                  </ul>
+                  </nav>
+            </section>
+            <section class="footer__lien">
+              <p>Retrouvez nous sur:</p>
+              <div>
+              <img src ="/public/img/instagram (3) 1.webp"  alt="instagram" class="footer__icon"></a>
+              <img src="/public/img/Vector.webp"  alt="twitter" class="footer__icon"></a>
+              </div>
+            </section>
+            </section>
+            <section class="footer__credit">
+              <p><a href="https://butmmi.thomasjeu.fr/#/">Projet realisé dans le cadre d’un exercice pédagogique au département  MMI de Montbéliard</a></p>
+            </section>
+            </div>
+          </footer>
+          </body>
+          </html>
+    </body>
+    </html>
