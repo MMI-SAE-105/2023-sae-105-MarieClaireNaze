@@ -15,7 +15,7 @@
         <div class="nav-toggle" onclick="document.body.classList.toggle('menu-open')
         ">
          <div class="nav-toggle-bar"></div>
-        </div>
+     
         
     </header>
     <main class="main">
@@ -40,12 +40,14 @@
                   <p x-show="open== true"x-transition.duration.800ms>
                         <img src="/public/img/El_dos_de_mayo_de_1808_en_Madrid.jpg" alt="2 de mayo" class="img">
                     <section><button{bouton $}+p><div x-data="{ open: false }">
-                <button @click="open = ! open"><u>Saturne mangeant l'un de ses fils</u></button>
-                <p x-show="open== true"x-transition.duration.800ms>
-                    <img src="/public/img/saturne.webp" alt="Saturne mangeant l'un de ses fils" class="img">
+                <button @click="open = ! open"><u>Saturne devorant l'un de ses fils</u></button>
+                  <p x-show="open== true"x-transition.duration.800ms>
+                        <img src="/public/img/saturne.webp" alt="Saturne devorant l'un de ses fils" class="img">
+                    
                   
             </div>
             </section>
+        </main>    
 
             <footer>
                 <div class="footer">
