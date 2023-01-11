@@ -15,6 +15,23 @@
         <div class="nav-toggle" onclick="document.body.classList.toggle('menu-open')
         ">
          <div class="nav-toggle-bar"></div>
+
+         <button aria-controls="mainNav" 
+      @click="menuIsOpen = ! menuIsOpen"
+      class="header_menuBtn">menu</button>
+      <h1 class="titre">Menu</h1>
+      <nav id="mainNav"
+      x-show="menuIsOpen"
+      x-transition.duration.800ms
+      class="menu">
+      
+        <ul class="Artiste">
+          <li><a href="/chopin.html">Frederique Chopin</a></li>
+          <li><a href="/Baubelaire.html">Charles Baudelaire</a></li>
+          <li><a href="/francisco_de_goya.html">Fransico de Goya</a></li>
+          <li><a href="/Riedel.html">Eduard Riedel</a></li>
+        </ul>
+      </nav>
      
         
     </header>
