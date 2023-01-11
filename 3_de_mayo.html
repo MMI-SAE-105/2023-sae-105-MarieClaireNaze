@@ -12,18 +12,18 @@
 <body class="">
     <header class="header">
         <img src="public/img/logo.webp" alt="Logo Feel'in" class="logo">
-        <div class="nav-toggle" onclick="document.body.classList.toggle('menu-open')
-        ">
-         <div class="nav-toggle-bar"></div>
-
-         <button aria-controls="mainNav" 
-      @click="menuIsOpen = ! menuIsOpen"
-      class="header_menuBtn">menu</button>
-      <h1 class="titre">Menu</h1>
-      <nav id="mainNav"
-      x-show="menuIsOpen"
-      x-transition.duration.800ms
-      class="menu">
+        <nav id="mainNav" x-show="menuIsOpen" class=" element.style">
+            <ul class="menulist--top">
+                <ul class="menulist--article">
+                    <li class="menuitem"> <h2 class="titre"> Les artistes</h2> <p><a href="/chopin.html">Frederique Chopin</a><p><a href="/francisco_de_goya.html">Francisco de Goya</a></p></p><p><a href="/Baubelaire.html">Charles Baudelaire</a></p><p><a href="/Riedel.html">Eduard Riedel</a></p></li>
+                    <li class="menuitem"><h2 class="titre"> Nos oeuvres</h2> <p><a href="/3_de_mayo.html">3 de Mayo</a></p><p><a href="/chateau_de_Neushwanstein.html">Chateau de Neushwanstein</a></p>
+                    <p><a href="/le_déséspéré.html">Le désespéré</a></p><p><a href="/le_radeau_de_la_meduse.html">Le radeau de la meduse</a></p><p><a href="/Lesfleursdumal.html">Les fleurs du Mal</a></p><p><a href="/Nocuturne_opus_9.html">Nocturne opus 9</a></p><p><a href="/saturne_devorant_l'un_de_ses_fis.html">Saturne devorant l'un de ses fils</a></p><p><a href="/voyageur_face_a_la_mer_de_nuage.html">Le Voyageur contemplant une mer de nuages</a></p>
+                    </li>
+            </ul>
+            <ul class="menulist--bottom">
+                <li class="menuitem"><a href="/Information.html" class="titre">Information</a></li>
+            </ul>
+        </nav>
 
         <ul class="Artiste">
           <li><a href="/chopin.html">Frederique Chopin</a></li>
@@ -61,7 +61,7 @@
                   <p x-show="open== true"x-transition.duration.800ms>
                         <img src="/public/img/saturne.webp" alt="Saturne devorant l'un de ses fils" class="img">
                     
-                  </p>
+                  </p>Pour en savoir plus sur l'artiste cliquez <a href="/francisco_de_goya.html">ici</a> </p>
                  
             </div>
             </section>
