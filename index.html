@@ -10,11 +10,21 @@
 <body>
     <header class="header">
         <img src="public/img/logo.webp" alt="Logo Feel'in" class="logo">
-        <div class="nav-toggle" onclick="document.body.classList.toggle('menu-open')
-        ">
-         <div class="nav-toggle-bar"></div>
-        </div>
-        
+        <nav id="mainNav" x-show="menuIsOpen" class="headermenu">
+            <button class="menuclose" @click="menuIsOpen= ! menuIsOpen"><img  src="/public/img/menu.webp" alt="d menu" class="menuclose--img"></button>
+            <ul class="menulist--top">
+                <ul class="menulist--article">
+                    <li class="menuitem"> <h2> Les artistes</h2> <p><a href="/chopin.html">Frederique Chopin</a><p><a href="/francisco_de_goya.html">Francisco de Goya</a></p></p><p><a href="/Baubelaire.html">Charles Baudelaire</a></p><p><a href="/Riedel.html">Eduard Riedel</a></p></li>
+                    <li class="menuitem"><h2> Nos oeuvres</h2> <p><a href="/3_de_mayo.html">3 de Mayo</a></p><p><a href="/chateau_de_Neushwanstein.html">Chateau de Neushwanstein</a></p>
+                    <p><a href="/le_déséspéré.html">Le désespéré</a></p><p><a href="/le_radeau_de_la_meduse.html">Le radeau de la meduse</a></p><p><a href="/Lesfleursdumal.html">Les fleurs du Mal</a></p><p><a href="/Nocuturne_opus_9.html">Nocturne opus 9</a></p><p><a href="/saturne_devorant_l'un_de_ses_fis.html">Saturne devorant l'un de ses fils</a></p><p><a href="/voyageur_face_a_la_mer_de_nuage.html">Le Voyageur contemplant une mer de nuages</a></p>
+                </li>
+    
+            
+            </ul>
+            <ul class="menulist--bottom">
+                <li class="menuitem"><a href="/fr/a_propos.html" class="menu__link--propos">Information</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
 carrousel 
@@ -27,11 +37,11 @@ carrousel
 <p>Vous y decouvrais le romantisme a travers ses artiste, la peinture, les batiment, la literrature et la music.</p>
 <p>Une exposition pour petit et grand a ne pas louper</p>
 <a href="/Information.html"> <p>cliquez pour en savoir plus</p></a></article>
-
-<h2>Le Romantisme</h2>
-<h3> <div class="surliger">Définition</div></h3>
-<p>Mouvement littéraire et artistique qui s'est développé dans la première moitié du xixe siècle par réaction contre la régularité classique et le rationalisme des siècles précédents.</p>
-<h3> <div class="surliger">Caracteristiqur</div></h3>
+<article class="article">
+<h2 class="titre">Le Romantisme</h2>
+<h3> <div class="">Définition</div></h3>
+<p>Le romantisme est un mouvement literraire mais aussi artisitique se situant a partie de la premiere moitier du </p>
+<h3> <div class="surliger">Caracteristique</div></h3>
 <p>Il se caractérise par la dominance de la sensibilité, de l'émotion et de l'imagination sur la raison et la morale. Les artistes peignent en affirmant leurs idées et en laissant apparaître avec passion leurs impressions et sentiments personnels à travers leurs œuvres.</p>
 
 
@@ -93,6 +103,8 @@ carrousel
           </a>
       </div>
 </section>
+</article>
+    </main>
     <footer>
         <div class="footer">
           <h3 class="titre__footer">Feel'in</h3>

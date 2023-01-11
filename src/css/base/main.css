@@ -2,7 +2,7 @@ body{
     background-color: var(--background);
 }
 
-.main{margin: 15px;}
+main{margin: 15px;}
 .titre{
     font-family: 'Great Vibes';
     background-color: var(--jaunesurligner);
@@ -93,4 +93,19 @@ div:after{
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
+}
+
+
+
+.main__contact{
+    background-color: var(--element);
+    margin: 20px;
+    border-radius: 3%;
+    position: relative;
+    font-family: 'Noto Sans';
+    font-size: small;
+    margin: 10px;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
 }
