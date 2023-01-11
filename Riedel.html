@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feel'in</title>
     <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+
 </head>
 <body class="">
     <header class="header">
@@ -18,11 +20,24 @@
     </header>
     <main class="main">
         
-        <h1 class="titre__article"><div class="surligner__titrearticle">Frédérique Chopin</div></h1>
+        <h1 class="titre__article"><div class="surligner__titrearticle">Eduard Riedel</div></h1>
       
         
-        <img src="/public/img/chopin.webp" alt="Frédérique Chopin" class="img__artiste">
+        <img src="/public/img/eduard.webp" alt="Eduard Riedel" class="img__artiste">
        
         <section class="article">
             <h2 class="titre">
                 Presentation</h2>
+                <p>Eduard Riedel né en 1813 et mort en 1885 en Allemagne. Il etait l'architecte en chef du royaume de Bavière, un ancien royaume a cheval entre l'Allemagne et l'Autriche. Il a nottenment construit  le chateau de Neushwanstein.</p>
+                <section class="article">
+                    <h2 class="titre">Autre création</h2>
+                <div class="accordeon">
+                  <section><button{bouton $}+p><div x-data="{ open: false }">
+                    <button @click="open = ! open"><u>Musée des Arts Populaires de Bavière</u></button>
+                      <p x-show="open== true"x-transition.duration.800ms>
+                            <img src="/public/img/Musée des Arts Populaires de Bavière.jpg" alt="3 de mayo" class="img">
+                        <section><button{bouton $}+p><div x-data="{ open: false }">
+                    
+                      
+                </div>
+                </section>
