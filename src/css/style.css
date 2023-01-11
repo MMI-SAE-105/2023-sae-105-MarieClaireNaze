@@ -4,5 +4,5 @@
 @import "base/media.css";
 @import "layout/header.css";
 @import "layout/footer.css";
-@import "components/menu.css";
+@import "component/menu.css";
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300&display=swap');

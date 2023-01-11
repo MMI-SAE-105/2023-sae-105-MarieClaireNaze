@@ -6,28 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feel'in</title>
     <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header" x-data="{menuIsOpen:false}">
         <img src="public/img/logo.webp" alt="Logo Feel'in" class="logo">
-        <nav id="mainNav" x-show="menuIsOpen" class="headermenu">
-            <button class="menuclose" @click="menuIsOpen= ! menuIsOpen"><img  src="/public/img/menu.webp" alt="d menu" class="menuclose--img"></button>
+        <button class="menuclose" @click="menuIsOpen = !menuIsOpen"><img  src="/public/img/menu.webp" alt="d menu" class="menuclose--img"></button>
+
+        <nav id="mainNav" x-show="menuIsOpen" class=" element.style">
             <ul class="menulist--top">
                 <ul class="menulist--article">
-                    <li class="menuitem"> <h2> Les artistes</h2> <p><a href="/chopin.html">Frederique Chopin</a><p><a href="/francisco_de_goya.html">Francisco de Goya</a></p></p><p><a href="/Baubelaire.html">Charles Baudelaire</a></p><p><a href="/Riedel.html">Eduard Riedel</a></p></li>
-                    <li class="menuitem"><h2> Nos oeuvres</h2> <p><a href="/3_de_mayo.html">3 de Mayo</a></p><p><a href="/chateau_de_Neushwanstein.html">Chateau de Neushwanstein</a></p>
+                    <li class="menuitem"> <h2 class="titre"> Les artistes</h2> <p><a href="/chopin.html">Frederique Chopin</a><p><a href="/francisco_de_goya.html">Francisco de Goya</a></p></p><p><a href="/Baubelaire.html">Charles Baudelaire</a></p><p><a href="/Riedel.html">Eduard Riedel</a></p></li>
+                    <li class="menuitem"><h2 class="titre"> Nos oeuvres</h2> <p><a href="/3_de_mayo.html">3 de Mayo</a></p><p><a href="/chateau_de_Neushwanstein.html">Chateau de Neushwanstein</a></p>
                     <p><a href="/le_déséspéré.html">Le désespéré</a></p><p><a href="/le_radeau_de_la_meduse.html">Le radeau de la meduse</a></p><p><a href="/Lesfleursdumal.html">Les fleurs du Mal</a></p><p><a href="/Nocuturne_opus_9.html">Nocturne opus 9</a></p><p><a href="/saturne_devorant_l'un_de_ses_fis.html">Saturne devorant l'un de ses fils</a></p><p><a href="/voyageur_face_a_la_mer_de_nuage.html">Le Voyageur contemplant une mer de nuages</a></p>
-                </li>
-    
-            
+                    </li>
             </ul>
             <ul class="menulist--bottom">
-                <li class="menuitem"><a href="/fr/a_propos.html" class="menu__link--propos">Information</a></li>
+                <li class="menuitem"><a href="/Information.html" class="titre">Information</a></li>
             </ul>
         </nav>
     </header>
     <main>
-carrousel 
+
+        <section class="carouselbackground">
+            <div>
+        <div class="carrousel" x-data="{hrefCourant:'#ecran-1',}">
+            <button @click="const p =$refs.parent ;  p.scrollLeft-= p.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">&lt;</button><button @click="const p =$refs.parent ;  p.scrollLeft+= p.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
+            <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
+                              [...$refs.parent.children]
+                               .find(e=>e.getBoundingClientRect().x>=0)
+                               .id">
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/2 hommes contemplant la lune.jpg" alt="2 hommes contemplant la lune"></a>
+                        
+                    </figure>
+                </div>
+    <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                      <img src="/public/img/chateau.webp" alt="chateau_de_Neushwanstein"></a>
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel_ecran">
+                    <figure>
+                        <img  src="/public/img/3 de mayo.webp" alt="Léon belly"></a>
+                        
+                    </figure>
+                </div>
+                <div id="ecran-4" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/h" alt="image ecran 4"></a>
+                        <figcaption class="c__artiste">George Gasté</figcaption>
+                    </figure>
+            
+            </div>
+        </div>
+    </section>
 
 
 

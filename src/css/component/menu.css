@@ -7,6 +7,7 @@
     background: #fff;
     display: grid;
     place-content: center;
+    
   }
   .header_menuBtn {
     position: relative;
@@ -16,8 +17,25 @@
     overflow: hidden;
   }
   .menuclose{
+    background-color: transparent;
+    border: transparent;
+    position: relative; 
+    z-index: 2;
   
   }
   .menuclose--img{
     background-color: transparent;
+    z-index: 1;
   }
+
+  .header nav {
+    position: fixed;
+    background: var(--background);
+    inset: 0;
+    z-index: 1;
+    font-family: 'Roboto';
+}
+
+.header nav a {
+    color: black;
+}
